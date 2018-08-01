@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	body {
+        background-image: url("wall.jpg");
+		background-repeat:no-repeat;
+
+   		background-size:cover;    
+	} 
+	h1 {text-align: center; color: white; font-family: sans-serif;}
+
+
+.nama{
+	color: black; 
+	font-family: monospace; 
+	font-size: 40px;
+	position:fixed;
+	left:10px;
+    top:5px;
+}	
+
+
+
+	
+input[type=text], select[id=game] {
+    width: 98%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background: transparent;
+  
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 16px;
+}
+
+
+	</style>
+</head>
+<body>
+<h1>Welcome to my Site.</h1>
+
+	<div class="nama">
+    <span>STEVEN SALIM</span>
+	</div>
+   
+
+
+
+<form action="../index.html"> 
+	<div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+
+    <label for="game"><b>What is your favourite game?</b></label></br>
+    <select id= "game" onChange="gameChange()" required>
+         <option value="" disabled selected>Choose Your Game</option>
+ 		 <option value="MLBB">Mobile Legends Bang Bang</option>
+ 		 <option value="PUBG">Player Unknown's BattleGrounds (PUBG)</option>
+  		 <option value="ROS">Rules Of Survival (ROS)</option>
+		</select>
+        
+
+    <button id="Enter" type="submit" name="Enter">Enter</button>
+
+  <script type="text/javascript">
+     document.getElementById("Enter").onclick = function () {
+        (document.getElementById("uname").value !=""){
+        };
+    }
+  
+	</script>
+</form>		
+	
+</body>
+</html>
+ 
